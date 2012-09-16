@@ -29,7 +29,6 @@ items = \
             "user": %(id)s,
             "facebook_id": "",
             "latitude": -234.0,
-            "api_access_token": "",
             "type": %(account_type)s,
             "icon": "icons/2012/09/16/icon.gif"
         }

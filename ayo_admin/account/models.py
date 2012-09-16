@@ -13,7 +13,6 @@ class Account(models.Model):
     latitude = models.FloatField(null=True, blank=True)
     facebook_id = models.CharField(max_length=100, null=True, blank=True)
     facebook_access_token = models.CharField(max_length=100, null=True, blank=True)
-    api_access_token = models.CharField(max_length=100, null=True, blank=True)
     is_facebook_account = models.BooleanField(default=True)
     register_time = models.DateTimeField(auto_now_add=True)
     last_login_time = models.DateTimeField(auto_now=True)
