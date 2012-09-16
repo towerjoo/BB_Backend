@@ -8,41 +8,55 @@ Replace this with more appropriate tests for your application.
 from django.test import TestCase
 from django.test import Client
 from django.core.urlresolvers import reverse
-
+import json
 
 class APITest(TestCase):
     fixtures = ["all.json"]
     def setUp(self):
         self.c = Client()
         self.username = "zhutao1"
-        self.access_token = ""
+        self.api_key = ""
         self.host = "http://localhost:8000"
 
     def make_ret_as_dict(self, response):
         return eval(response.content)
 
+    def pprint_result(self, resp):
+        print json.dumps(resp, indent=4)
+
     def login(self):
         url = self.host + reverse("account-login")
         response = self.c.post(url, {"username" : "zhutao1", "password" : "zhutao"})
         ret = self.make_ret_as_dict(response)
-        self.access_token = ret.get("data").get('access_token')
+        self.api_key = ret.get("data").get('api_key')
         return response, ret
 
-    def test_login(self):
+    def test_login_succ(self):
         response, ret = self.login()
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "success")
+        self.pprint_result(ret)
 
-    def get_endpoint_with_access_token(self, endpoint, detailId=""):
+    def test_login_fail(self):
+        url = self.host + reverse("account-login")
+        response = self.c.post(url, {"username" : "zhutao1", "password" : "zhutao2"})
+        ret = self.make_ret_as_dict(response)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response["Content-Type"], "application/json")
+        self.assertEqual(ret.get("status"), "error")
+        self.pprint_result(ret)
+
+    def get_endpoint_with_api_key(self, endpoint, detailId=""):
         endpoint = "%s%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, detailId, \
-                    self.access_token, self.username)
+                    self.api_key, self.username)
         return endpoint
 
     def test_get_user_profile(self):
         self.login()
         url = "/api/v1/account/"
-        endpoint = self.get_endpoint_with_access_token(url, "1")
-        print endpoint
+        endpoint = self.get_endpoint_with_api_key(url, "1")
         response = self.c.get(endpoint)
-        print response
+        ret = self.make_ret_as_dict(response)
+        self.pprint_result(ret)

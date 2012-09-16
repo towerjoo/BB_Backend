@@ -22,7 +22,7 @@ def login(request):
                     data.update({
                         "message" : "Login successfully",
                         "data" : {
-                            "access_token" : api.key,
+                            "api_key" : api.key,
                             "username" : user.username,
                         }
                     })
