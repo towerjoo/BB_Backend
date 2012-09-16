@@ -1,4 +1,5 @@
 from skeleton import items
+from follow_relation import relation
 out = ""
 for i in range(1, 101):
     import random
@@ -14,10 +15,25 @@ for i in range(1, 101):
     }
     item = items % data
     out += item
+rel = ""
+for i in range(1, 101):
+    import random
+    r = range(1,101)
+    f_id = random.choice(r)
+    r.remove(f_id)
+    ff_id = random.choice(r)
+    data = {
+        "id" : str(i),
+        "follower" : str(f_id),
+        "followee" : str(ff_id),
+    }
+    item  = relation % data
+    rel += item
 ret = """[
 %s
+%s
 ]"""
-print ret % out[:-2]
+print ret % (out, rel[:-2])
     
 
         

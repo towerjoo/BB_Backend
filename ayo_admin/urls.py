@@ -7,10 +7,23 @@ admin.autodiscover()
 
 # for RESTful APIs
 from tastypie.api import Api
-from account.api import AccountResource, UserResource
+from account.api import AccountResource, UserResource, FollowRelationResource, ContactGroupResource
 v1_api = Api(api_name="v1")
 v1_api.register(UserResource())
 v1_api.register(AccountResource())
+v1_api.register(FollowRelationResource())
+v1_api.register(ContactGroupResource())
+
+from venue.api import VenueResource
+v1_api.register(VenueResource())
+
+from shout.api import ShoutResource, ShoutCommentResource, ShoutReportResource
+v1_api.register(ShoutResource())
+v1_api.register(ShoutCommentResource())
+v1_api.register(ShoutReportResource())
+
+from notification.api import ShoutNotificationResource
+v1_api.register(ShoutNotificationResource())
 
 urlpatterns = patterns('',
     # Examples:

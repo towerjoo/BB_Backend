@@ -131,13 +131,18 @@ class APITest(TestCase):
 
 
     ######## RESTful APIs testing
-    def get_endpoint(self, endpoint, resourceId=None):
+
+    def get_endpoint(self, endpoint, resourceId=None, filter=None):
         if resourceId:
             # detail
             return "%s%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, resourceId, self.api_key, self.username)
         else:
             # list
-            return "%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, self.api_key, self.username)
+            if filter is None:
+                return "%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, self.api_key, self.username)
+            else:
+                return "%s%s?api_key=%s&username=%s&format=json&%s" % (self.host, endpoint, self.api_key, self.username, filter)
+
 
     def test_user_list(self):
         self.login()
@@ -175,4 +180,28 @@ class APITest(TestCase):
         #self.pprint_result(response)
 
 
+    def test_follow_relation_list(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/followrelation/", filter="follower_id=1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+    def test_follow_relation_detail(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/followrelation/", "1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+
+    def test_contact_group_list(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/contactgroup/")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+    def test_contact_group_detail(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/contactgroup/", "1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
 

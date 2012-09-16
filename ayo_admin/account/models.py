@@ -65,7 +65,7 @@ class FollowRelation(models.Model):
     follow_time = models.DateTimeField()
 
     def __unicode__(self):
-        return "%s is following %s" % (self.follower.user.username, self.followee.user.username)
+        return "%s is following %s" % (self.follower.user, self.followee.user)
 
 
 class ContactGroup(models.Model):
