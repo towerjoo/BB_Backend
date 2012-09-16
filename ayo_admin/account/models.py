@@ -33,7 +33,7 @@ class FollowRelation(models.Model):
 class ContactGroup(models.Model):
     name = models.CharField(max_length=20)
     owner = models.ForeignKey(Account, related_name="ContactGroupOwner")
-    members = models.TextField(default="{}")    # serilized data
+    members = models.TextField(default="[]")    # serilized data
     create_time = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
