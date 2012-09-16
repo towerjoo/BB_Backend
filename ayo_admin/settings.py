@@ -133,7 +133,13 @@ INSTALLED_APPS = (
     "debug_toolbar",
 
     # apps here
-    'sample',
+    #'ayo',
+    'account',
+    'notification',
+    'shout',
+    'venue',
+    'trend',
+
 )
 
 if NEED_SUPPORT_RESTFUL_API:
