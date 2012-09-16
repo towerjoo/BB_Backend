@@ -29,6 +29,7 @@
             "user": 1,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -40,7 +41,7 @@
             "owner": 1,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[63, 84, 10, 61]"
+            "members": "[5, 50, 39, 99, 6, 68]"
         }
     },
     {
@@ -118,6 +119,7 @@
             "user": 2,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -129,7 +131,7 @@
             "owner": 2,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[71, 68, 45]"
+            "members": "[10, 87, 89, 22, 2, 39, 35, 96, 42]"
         }
     },
     {
@@ -207,6 +209,7 @@
             "user": 3,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -218,14 +221,14 @@
             "owner": 3,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[73, 24, 94, 96, 61, 30, 26, 21]"
+            "members": "[9, 99, 70]"
         }
     },
     {
         "pk": 3,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 3,
             "receiver": 3 
         }
@@ -241,7 +244,7 @@
             "venue": 3,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -296,6 +299,7 @@
             "user": 4,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -307,14 +311,14 @@
             "owner": 4,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[47, 78, 44, 62, 15]"
+            "members": "[67, 52, 31, 70, 100, 56, 66]"
         }
     },
     {
         "pk": 4,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 4,
             "receiver": 4 
         }
@@ -385,6 +389,7 @@
             "user": 5,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -396,14 +401,14 @@
             "owner": 5,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[14, 75, 62, 3]"
+            "members": "[85, 60, 72, 51]"
         }
     },
     {
         "pk": 5,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 5,
             "receiver": 5 
         }
@@ -474,6 +479,7 @@
             "user": 6,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -485,7 +491,7 @@
             "owner": 6,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[88, 35, 51]"
+            "members": "[11, 78, 77, 92, 83, 32, 37]"
         }
     },
     {
@@ -563,6 +569,7 @@
             "user": 7,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -574,7 +581,7 @@
             "owner": 7,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[90, 21, 84, 39, 69, 2, 62, 35, 53, 20]"
+            "members": "[11, 76, 20, 96, 17, 85, 100]"
         }
     },
     {
@@ -652,7 +659,8 @@
             "user": 8,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -663,7 +671,7 @@
             "owner": 8,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[66, 92, 71, 11, 57]"
+            "members": "[34, 53, 68]"
         }
     },
     {
@@ -741,7 +749,8 @@
             "user": 9,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -752,7 +761,7 @@
             "owner": 9,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[59, 91, 25, 24, 6]"
+            "members": "[62, 18, 54, 94, 50, 65, 36]"
         }
     },
     {
@@ -775,7 +784,7 @@
             "venue": 9,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -830,7 +839,8 @@
             "user": 10,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -841,7 +851,7 @@
             "owner": 10,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[99, 35, 94, 41, 87]"
+            "members": "[78, 77, 52, 23, 84]"
         }
     },
     {
@@ -919,6 +929,7 @@
             "user": 11,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -930,7 +941,7 @@
             "owner": 11,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[3, 89, 10, 98, 92, 78, 47, 54]"
+            "members": "[80, 91, 50, 2, 65, 17, 97]"
         }
     },
     {
@@ -1008,7 +1019,8 @@
             "user": 12,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1019,14 +1031,14 @@
             "owner": 12,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[2, 59, 94, 41, 87, 30, 43, 38, 90]"
+            "members": "[82, 34, 69, 88, 11]"
         }
     },
     {
         "pk": 12,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 12,
             "receiver": 12 
         }
@@ -1097,6 +1109,7 @@
             "user": 13,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -1108,7 +1121,7 @@
             "owner": 13,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[1, 52, 95, 5, 4, 31, 86, 2]"
+            "members": "[80, 41, 71, 47, 58, 86, 30, 28]"
         }
     },
     {
@@ -1186,7 +1199,8 @@
             "user": 14,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1197,7 +1211,7 @@
             "owner": 14,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[67, 78, 53, 1, 21, 15, 35, 29, 100]"
+            "members": "[20, 39, 35, 55, 53, 76, 56, 78, 58]"
         }
     },
     {
@@ -1275,6 +1289,7 @@
             "user": 15,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -1286,14 +1301,14 @@
             "owner": 15,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[87, 34, 98, 83, 63, 36, 64]"
+            "members": "[40, 64, 54, 70]"
         }
     },
     {
         "pk": 15,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 15,
             "receiver": 15 
         }
@@ -1364,7 +1379,8 @@
             "user": 16,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1375,7 +1391,7 @@
             "owner": 16,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[96, 22, 7, 80, 26, 39, 60, 10, 88]"
+            "members": "[48, 1, 74, 22, 91, 34, 19, 66]"
         }
     },
     {
@@ -1398,7 +1414,7 @@
             "venue": 16,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -1453,7 +1469,8 @@
             "user": 17,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1464,14 +1481,14 @@
             "owner": 17,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[11, 95, 35, 82, 41, 29]"
+            "members": "[20, 37, 54]"
         }
     },
     {
         "pk": 17,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 17,
             "receiver": 17 
         }
@@ -1487,7 +1504,7 @@
             "venue": 17,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -1542,7 +1559,8 @@
             "user": 18,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1553,7 +1571,7 @@
             "owner": 18,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[75, 98, 85, 96, 13, 58, 62, 89, 68, 46]"
+            "members": "[9, 51, 90]"
         }
     },
     {
@@ -1576,7 +1594,7 @@
             "venue": 18,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -1631,7 +1649,8 @@
             "user": 19,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1642,14 +1661,14 @@
             "owner": 19,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[55, 17, 65, 71, 43, 58, 26, 69, 48]"
+            "members": "[55, 68, 62, 75, 8, 5, 43]"
         }
     },
     {
         "pk": 19,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 19,
             "receiver": 19 
         }
@@ -1665,7 +1684,7 @@
             "venue": 19,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -1720,6 +1739,7 @@
             "user": 20,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -1731,7 +1751,7 @@
             "owner": 20,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[1, 29, 53, 81, 79, 21]"
+            "members": "[35, 10, 99, 8, 41, 19]"
         }
     },
     {
@@ -1754,7 +1774,7 @@
             "venue": 20,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -1809,7 +1829,8 @@
             "user": 21,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -1820,7 +1841,7 @@
             "owner": 21,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[98, 100, 62, 39, 1, 10, 48, 89, 9]"
+            "members": "[42, 59, 77]"
         }
     },
     {
@@ -1898,6 +1919,7 @@
             "user": 22,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -1909,7 +1931,7 @@
             "owner": 22,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[81, 72, 62, 84]"
+            "members": "[79, 30, 89, 4, 100, 11]"
         }
     },
     {
@@ -1987,6 +2009,7 @@
             "user": 23,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -1998,14 +2021,14 @@
             "owner": 23,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[84, 61, 91]"
+            "members": "[29, 99, 5, 45, 86, 6]"
         }
     },
     {
         "pk": 23,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 23,
             "receiver": 23 
         }
@@ -2021,7 +2044,7 @@
             "venue": 23,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -2076,6 +2099,7 @@
             "user": 24,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2087,7 +2111,7 @@
             "owner": 24,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[90, 91, 80, 20, 44, 32, 45]"
+            "members": "[49, 13, 8]"
         }
     },
     {
@@ -2110,7 +2134,7 @@
             "venue": 24,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -2165,6 +2189,7 @@
             "user": 25,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2176,7 +2201,7 @@
             "owner": 25,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[76, 43, 31, 89]"
+            "members": "[49, 17, 65, 32]"
         }
     },
     {
@@ -2199,7 +2224,7 @@
             "venue": 25,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -2254,7 +2279,8 @@
             "user": 26,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -2265,14 +2291,14 @@
             "owner": 26,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[88, 72, 55, 37, 31, 74, 44]"
+            "members": "[53, 72, 79, 11, 2, 23, 83, 44, 14, 98]"
         }
     },
     {
         "pk": 26,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 26,
             "receiver": 26 
         }
@@ -2288,7 +2314,7 @@
             "venue": 26,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -2343,6 +2369,7 @@
             "user": 27,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2354,7 +2381,7 @@
             "owner": 27,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[46, 19, 40, 5, 50, 42, 30, 57]"
+            "members": "[28, 1, 64, 3, 75, 4, 100, 47, 41, 77]"
         }
     },
     {
@@ -2432,6 +2459,7 @@
             "user": 28,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2443,14 +2471,14 @@
             "owner": 28,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[17, 26, 27, 95, 72, 84, 75]"
+            "members": "[30, 63, 98]"
         }
     },
     {
         "pk": 28,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 28,
             "receiver": 28 
         }
@@ -2521,7 +2549,8 @@
             "user": 29,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -2532,14 +2561,14 @@
             "owner": 29,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[10, 78, 3, 45, 63]"
+            "members": "[47, 9, 41, 56, 52, 86, 92, 20]"
         }
     },
     {
         "pk": 29,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 29,
             "receiver": 29 
         }
@@ -2610,7 +2639,8 @@
             "user": 30,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -2621,14 +2651,14 @@
             "owner": 30,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[63, 23, 13, 68, 6, 72, 21, 78, 75, 31]"
+            "members": "[25, 57, 69, 44, 32]"
         }
     },
     {
         "pk": 30,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 30,
             "receiver": 30 
         }
@@ -2644,7 +2674,7 @@
             "venue": 30,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -2699,7 +2729,8 @@
             "user": 31,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -2710,7 +2741,7 @@
             "owner": 31,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[71, 44, 58, 88, 80, 8, 6, 31]"
+            "members": "[76, 55, 17, 82, 52]"
         }
     },
     {
@@ -2788,7 +2819,8 @@
             "user": 32,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -2799,7 +2831,7 @@
             "owner": 32,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[1, 65, 81]"
+            "members": "[6, 92, 89, 9, 63, 21, 99, 34, 48, 19]"
         }
     },
     {
@@ -2877,6 +2909,7 @@
             "user": 33,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2888,14 +2921,14 @@
             "owner": 33,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[93, 72, 18, 48, 69]"
+            "members": "[80, 86, 69, 4, 87, 81, 33, 63]"
         }
     },
     {
         "pk": 33,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 33,
             "receiver": 33 
         }
@@ -2911,7 +2944,7 @@
             "venue": 33,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -2966,6 +2999,7 @@
             "user": 34,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -2977,14 +3011,14 @@
             "owner": 34,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[95, 3, 2, 82, 33, 73, 26, 97, 15, 71]"
+            "members": "[100, 75, 40, 95, 86, 2, 42, 47, 17, 29]"
         }
     },
     {
         "pk": 34,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 34,
             "receiver": 34 
         }
@@ -3000,7 +3034,7 @@
             "venue": 34,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -3055,7 +3089,8 @@
             "user": 35,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3066,7 +3101,7 @@
             "owner": 35,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[55, 79, 28, 22, 43, 51, 15, 12]"
+            "members": "[5, 98, 56, 13, 4, 28, 30, 23]"
         }
     },
     {
@@ -3144,7 +3179,8 @@
             "user": 36,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3155,14 +3191,14 @@
             "owner": 36,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[90, 25, 78, 62, 20]"
+            "members": "[43, 91, 5, 22, 94]"
         }
     },
     {
         "pk": 36,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 36,
             "receiver": 36 
         }
@@ -3233,7 +3269,8 @@
             "user": 37,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3244,7 +3281,7 @@
             "owner": 37,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[26, 83, 22, 13, 17, 9, 47, 77, 14]"
+            "members": "[76, 92, 45, 72, 26, 8, 59, 16]"
         }
     },
     {
@@ -3267,7 +3304,7 @@
             "venue": 37,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -3322,7 +3359,8 @@
             "user": 38,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3333,7 +3371,7 @@
             "owner": 38,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[86, 71, 68, 52, 56, 66]"
+            "members": "[19, 52, 79, 34, 11]"
         }
     },
     {
@@ -3411,7 +3449,8 @@
             "user": 39,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3422,14 +3461,14 @@
             "owner": 39,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[5, 77, 64, 91, 20, 58, 86, 23]"
+            "members": "[33, 34, 98, 63, 42, 39, 68]"
         }
     },
     {
         "pk": 39,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 39,
             "receiver": 39 
         }
@@ -3500,6 +3539,7 @@
             "user": 40,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -3511,14 +3551,14 @@
             "owner": 40,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[65, 99, 27, 5, 55]"
+            "members": "[66, 60, 12]"
         }
     },
     {
         "pk": 40,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 40,
             "receiver": 40 
         }
@@ -3589,7 +3629,8 @@
             "user": 41,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3600,7 +3641,7 @@
             "owner": 41,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[89, 90, 47, 34, 28, 33]"
+            "members": "[87, 29, 26, 86]"
         }
     },
     {
@@ -3678,7 +3719,8 @@
             "user": 42,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3689,14 +3731,14 @@
             "owner": 42,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[93, 86, 57, 41, 64, 63, 58]"
+            "members": "[30, 98, 15, 89, 81, 10, 28]"
         }
     },
     {
         "pk": 42,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 42,
             "receiver": 42 
         }
@@ -3712,7 +3754,7 @@
             "venue": 42,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -3767,6 +3809,7 @@
             "user": 43,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -3778,14 +3821,14 @@
             "owner": 43,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[34, 26, 98, 39]"
+            "members": "[27, 13, 44, 24]"
         }
     },
     {
         "pk": 43,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 43,
             "receiver": 43 
         }
@@ -3801,7 +3844,7 @@
             "venue": 43,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -3856,7 +3899,8 @@
             "user": 44,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -3867,7 +3911,7 @@
             "owner": 44,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[11, 53, 62, 58, 13]"
+            "members": "[24, 33, 70, 96, 68, 7, 66, 76, 30, 49]"
         }
     },
     {
@@ -3890,7 +3934,7 @@
             "venue": 44,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -3945,6 +3989,7 @@
             "user": 45,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -3956,7 +4001,7 @@
             "owner": 45,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[72, 23, 32, 54, 47, 63, 55, 81, 64, 66]"
+            "members": "[10, 26, 83, 86, 85, 59, 5, 34, 80, 18]"
         }
     },
     {
@@ -4034,7 +4079,8 @@
             "user": 46,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4045,14 +4091,14 @@
             "owner": 46,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[52, 16, 93, 61]"
+            "members": "[28, 3, 81, 39]"
         }
     },
     {
         "pk": 46,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 46,
             "receiver": 46 
         }
@@ -4123,7 +4169,8 @@
             "user": 47,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4134,14 +4181,14 @@
             "owner": 47,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[64, 71, 85, 97, 81, 23, 66]"
+            "members": "[70, 19, 29]"
         }
     },
     {
         "pk": 47,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 47,
             "receiver": 47 
         }
@@ -4212,7 +4259,8 @@
             "user": 48,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4223,14 +4271,14 @@
             "owner": 48,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[21, 36, 39, 11, 48, 88, 1, 89, 33, 42]"
+            "members": "[44, 70, 17, 15, 78, 75]"
         }
     },
     {
         "pk": 48,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 48,
             "receiver": 48 
         }
@@ -4301,7 +4349,8 @@
             "user": 49,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4312,14 +4361,14 @@
             "owner": 49,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[42, 17, 92, 18]"
+            "members": "[72, 41, 95, 63, 54, 27]"
         }
     },
     {
         "pk": 49,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 49,
             "receiver": 49 
         }
@@ -4335,7 +4384,7 @@
             "venue": 49,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -4390,7 +4439,8 @@
             "user": 50,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4401,14 +4451,14 @@
             "owner": 50,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[91, 46, 4, 69]"
+            "members": "[80, 72, 41, 10]"
         }
     },
     {
         "pk": 50,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 50,
             "receiver": 50 
         }
@@ -4479,7 +4529,8 @@
             "user": 51,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4490,14 +4541,14 @@
             "owner": 51,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[25, 41, 36, 65, 24, 46, 29, 76, 66, 30]"
+            "members": "[18, 2, 31, 73, 94, 3]"
         }
     },
     {
         "pk": 51,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 51,
             "receiver": 51 
         }
@@ -4513,7 +4564,7 @@
             "venue": 51,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -4568,7 +4619,8 @@
             "user": 52,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4579,14 +4631,14 @@
             "owner": 52,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[48, 13, 86, 25, 67, 23, 43, 20, 21, 2]"
+            "members": "[41, 87, 26, 48, 55, 10, 50, 92]"
         }
     },
     {
         "pk": 52,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 52,
             "receiver": 52 
         }
@@ -4657,7 +4709,8 @@
             "user": 53,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4668,14 +4721,14 @@
             "owner": 53,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[85, 76, 25, 1, 72, 55]"
+            "members": "[80, 75, 22, 45, 24, 94, 9, 74, 99, 39]"
         }
     },
     {
         "pk": 53,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 53,
             "receiver": 53 
         }
@@ -4691,7 +4744,7 @@
             "venue": 53,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -4746,6 +4799,7 @@
             "user": 54,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -4757,7 +4811,7 @@
             "owner": 54,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[11, 84, 8, 27, 14, 30, 63, 22]"
+            "members": "[77, 54, 22]"
         }
     },
     {
@@ -4780,7 +4834,7 @@
             "venue": 54,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -4835,6 +4889,7 @@
             "user": 55,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -4846,7 +4901,7 @@
             "owner": 55,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[70, 68, 43, 54, 91, 30]"
+            "members": "[70, 59, 67, 12, 31, 25, 4, 17, 85, 55]"
         }
     },
     {
@@ -4869,7 +4924,7 @@
             "venue": 55,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -4924,7 +4979,8 @@
             "user": 56,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -4935,14 +4991,14 @@
             "owner": 56,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[79, 99, 63, 35, 30, 9, 75]"
+            "members": "[96, 62, 16]"
         }
     },
     {
         "pk": 56,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 56,
             "receiver": 56 
         }
@@ -4958,7 +5014,7 @@
             "venue": 56,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -5013,6 +5069,7 @@
             "user": 57,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -5024,14 +5081,14 @@
             "owner": 57,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[56, 81, 89, 66, 93, 77, 87]"
+            "members": "[29, 90, 92, 38, 81, 30, 71, 55, 93]"
         }
     },
     {
         "pk": 57,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 57,
             "receiver": 57 
         }
@@ -5102,7 +5159,8 @@
             "user": 58,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5113,7 +5171,7 @@
             "owner": 58,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[83, 74, 47, 64, 89, 37, 40, 92, 23]"
+            "members": "[55, 17, 20, 14, 97, 15, 16, 29, 13, 98]"
         }
     },
     {
@@ -5136,7 +5194,7 @@
             "venue": 58,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -5191,6 +5249,7 @@
             "user": 59,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -5202,14 +5261,14 @@
             "owner": 59,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[92, 12, 14]"
+            "members": "[54, 6, 95, 84, 39, 52]"
         }
     },
     {
         "pk": 59,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 59,
             "receiver": 59 
         }
@@ -5280,7 +5339,8 @@
             "user": 60,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5291,14 +5351,14 @@
             "owner": 60,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[21, 77, 19]"
+            "members": "[91, 15, 67, 61]"
         }
     },
     {
         "pk": 60,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 60,
             "receiver": 60 
         }
@@ -5314,7 +5374,7 @@
             "venue": 60,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -5369,6 +5429,7 @@
             "user": 61,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -5380,7 +5441,7 @@
             "owner": 61,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[89, 58, 49, 60]"
+            "members": "[29, 100, 41, 87, 17, 97]"
         }
     },
     {
@@ -5458,7 +5519,8 @@
             "user": 62,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5469,14 +5531,14 @@
             "owner": 62,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[38, 15, 50, 6]"
+            "members": "[36, 37, 20, 26, 42, 11, 44]"
         }
     },
     {
         "pk": 62,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 62,
             "receiver": 62 
         }
@@ -5492,7 +5554,7 @@
             "venue": 62,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -5547,6 +5609,7 @@
             "user": 63,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -5558,7 +5621,7 @@
             "owner": 63,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[31, 41, 50, 92, 80, 48]"
+            "members": "[25, 27, 39, 51, 57, 60, 29]"
         }
     },
     {
@@ -5636,6 +5699,7 @@
             "user": 64,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -5647,14 +5711,14 @@
             "owner": 64,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[27, 21, 13]"
+            "members": "[49, 99, 62, 87, 18, 8]"
         }
     },
     {
         "pk": 64,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 64,
             "receiver": 64 
         }
@@ -5670,7 +5734,7 @@
             "venue": 64,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -5725,7 +5789,8 @@
             "user": 65,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5736,14 +5801,14 @@
             "owner": 65,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[33, 78, 65, 93, 47, 39, 80, 85, 20, 91]"
+            "members": "[11, 97, 80, 100, 69, 16, 65, 82]"
         }
     },
     {
         "pk": 65,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 65,
             "receiver": 65 
         }
@@ -5814,7 +5879,8 @@
             "user": 66,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5825,7 +5891,7 @@
             "owner": 66,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[16, 4, 42]"
+            "members": "[61, 5, 39]"
         }
     },
     {
@@ -5903,7 +5969,8 @@
             "user": 67,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -5914,7 +5981,7 @@
             "owner": 67,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[61, 39, 64, 86, 10]"
+            "members": "[80, 64, 16, 13, 46, 37, 62]"
         }
     },
     {
@@ -5992,7 +6059,8 @@
             "user": 68,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6003,14 +6071,14 @@
             "owner": 68,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[4, 20, 17, 87, 57, 24, 26, 40]"
+            "members": "[67, 63, 38, 75, 85, 90, 27, 70, 72]"
         }
     },
     {
         "pk": 68,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 68,
             "receiver": 68 
         }
@@ -6081,7 +6149,8 @@
             "user": 69,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6092,14 +6161,14 @@
             "owner": 69,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[94, 42, 87, 37, 96, 1, 81, 60, 41, 39]"
+            "members": "[24, 44, 7, 19, 71, 52]"
         }
     },
     {
         "pk": 69,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 69,
             "receiver": 69 
         }
@@ -6115,7 +6184,7 @@
             "venue": 69,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -6170,7 +6239,8 @@
             "user": 70,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6181,7 +6251,7 @@
             "owner": 70,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[31, 17, 57, 99, 43, 97, 39, 94, 98]"
+            "members": "[15, 8, 21, 28, 63, 27, 24]"
         }
     },
     {
@@ -6259,6 +6329,7 @@
             "user": 71,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -6270,7 +6341,7 @@
             "owner": 71,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[32, 1, 37, 94, 73, 98, 77, 86]"
+            "members": "[45, 10, 20, 51, 75, 65, 34, 91, 70, 1]"
         }
     },
     {
@@ -6348,6 +6419,7 @@
             "user": 72,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -6359,7 +6431,7 @@
             "owner": 72,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[29, 96, 6, 14, 28]"
+            "members": "[66, 50, 11, 100]"
         }
     },
     {
@@ -6437,6 +6509,7 @@
             "user": 73,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -6448,7 +6521,7 @@
             "owner": 73,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[84, 70, 78, 7, 13, 14, 49, 19, 69, 90]"
+            "members": "[33, 78, 28, 72]"
         }
     },
     {
@@ -6471,7 +6544,7 @@
             "venue": 73,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -6526,7 +6599,8 @@
             "user": 74,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 2,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6537,14 +6611,14 @@
             "owner": 74,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[9, 4, 71, 31]"
+            "members": "[25, 85, 47, 22]"
         }
     },
     {
         "pk": 74,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 74,
             "receiver": 74 
         }
@@ -6560,7 +6634,7 @@
             "venue": 74,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -6615,7 +6689,8 @@
             "user": 75,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6626,7 +6701,7 @@
             "owner": 75,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[61, 47, 81, 86, 28, 80, 58]"
+            "members": "[47, 93, 62, 53, 90, 64, 13, 100, 4, 67]"
         }
     },
     {
@@ -6704,6 +6779,7 @@
             "user": 76,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -6715,7 +6791,7 @@
             "owner": 76,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[79, 62, 78]"
+            "members": "[73, 48, 10, 4, 27, 46, 66]"
         }
     },
     {
@@ -6738,7 +6814,7 @@
             "venue": 76,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -6793,6 +6869,7 @@
             "user": 77,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -6804,7 +6881,7 @@
             "owner": 77,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[4, 51, 91, 29, 73, 61]"
+            "members": "[57, 84, 56, 74, 3, 71, 96]"
         }
     },
     {
@@ -6882,7 +6959,8 @@
             "user": 78,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6893,7 +6971,7 @@
             "owner": 78,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[11, 78, 49, 41, 45, 60]"
+            "members": "[43, 40, 62, 15, 24, 90, 99, 45]"
         }
     },
     {
@@ -6916,7 +6994,7 @@
             "venue": 78,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -6971,7 +7049,8 @@
             "user": 79,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -6982,7 +7061,7 @@
             "owner": 79,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[13, 15, 90, 84, 61, 18, 76, 44]"
+            "members": "[37, 42, 17, 83]"
         }
     },
     {
@@ -7005,7 +7084,7 @@
             "venue": 79,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -7060,6 +7139,7 @@
             "user": 80,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7071,14 +7151,14 @@
             "owner": 80,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[76, 4, 43, 84, 56, 18, 28, 38, 87]"
+            "members": "[60, 91, 7, 41, 82, 93, 68, 30, 49]"
         }
     },
     {
         "pk": 80,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 80,
             "receiver": 80 
         }
@@ -7094,7 +7174,7 @@
             "venue": 80,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -7149,6 +7229,7 @@
             "user": 81,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7160,7 +7241,7 @@
             "owner": 81,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[4, 94, 31, 70, 62, 69, 22, 12]"
+            "members": "[40, 63, 71, 97, 56, 4, 17]"
         }
     },
     {
@@ -7238,6 +7319,7 @@
             "user": 82,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7249,14 +7331,14 @@
             "owner": 82,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[79, 100, 91, 76]"
+            "members": "[90, 70, 40, 6, 77, 25]"
         }
     },
     {
         "pk": 82,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 82,
             "receiver": 82 
         }
@@ -7327,6 +7409,7 @@
             "user": 83,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7338,7 +7421,7 @@
             "owner": 83,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[95, 35, 32, 82, 33, 85, 9, 38, 64, 18]"
+            "members": "[77, 17, 7, 12, 98, 20]"
         }
     },
     {
@@ -7416,6 +7499,7 @@
             "user": 84,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7427,7 +7511,7 @@
             "owner": 84,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[4, 84, 48, 31, 56, 85, 96, 68]"
+            "members": "[79, 72, 34, 73, 46, 55, 54, 66, 81, 96]"
         }
     },
     {
@@ -7505,7 +7589,8 @@
             "user": 85,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -7516,14 +7601,14 @@
             "owner": 85,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[55, 63, 45]"
+            "members": "[68, 13, 3, 27]"
         }
     },
     {
         "pk": 85,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 85,
             "receiver": 85 
         }
@@ -7539,7 +7624,7 @@
             "venue": 85,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -7594,7 +7679,8 @@
             "user": 86,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -7605,14 +7691,14 @@
             "owner": 86,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[36, 54, 57, 60, 88, 29, 18, 45, 100]"
+            "members": "[87, 47, 70, 27, 77, 35, 15, 22]"
         }
     },
     {
         "pk": 86,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 86,
             "receiver": 86 
         }
@@ -7628,7 +7714,7 @@
             "venue": 86,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -7683,7 +7769,8 @@
             "user": 87,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -7694,7 +7781,7 @@
             "owner": 87,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[44, 78, 70]"
+            "members": "[93, 24, 2]"
         }
     },
     {
@@ -7717,7 +7804,7 @@
             "venue": 87,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -7772,7 +7859,8 @@
             "user": 88,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -7783,7 +7871,7 @@
             "owner": 88,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[32, 41, 54, 93]"
+            "members": "[89, 32, 88, 14, 38]"
         }
     },
     {
@@ -7861,6 +7949,7 @@
             "user": 89,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7872,7 +7961,7 @@
             "owner": 89,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[61, 26, 15, 93, 16, 60]"
+            "members": "[30, 50, 3, 2, 66]"
         }
     },
     {
@@ -7950,6 +8039,7 @@
             "user": 90,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -7961,14 +8051,14 @@
             "owner": 90,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[51, 98, 18, 24, 57, 39]"
+            "members": "[68, 23, 22, 87, 96, 92, 80, 10]"
         }
     },
     {
         "pk": 90,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 90,
             "receiver": 90 
         }
@@ -7984,7 +8074,7 @@
             "venue": 90,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -8039,7 +8129,8 @@
             "user": 91,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 1,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -8050,7 +8141,7 @@
             "owner": 91,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[75, 12, 33]"
+            "members": "[75, 13, 7, 21, 85, 33, 86, 80, 22, 57]"
         }
     },
     {
@@ -8073,7 +8164,7 @@
             "venue": 91,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -8128,6 +8219,7 @@
             "user": 92,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -8139,7 +8231,7 @@
             "owner": 92,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[39, 14, 25, 8, 32, 30, 10, 65]"
+            "members": "[80, 8, 64, 27, 60, 26]"
         }
     },
     {
@@ -8217,6 +8309,7 @@
             "user": 93,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -8228,14 +8321,14 @@
             "owner": 93,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[4, 82, 74]"
+            "members": "[23, 35, 90, 81, 14, 26]"
         }
     },
     {
         "pk": 93,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 93,
             "receiver": 93 
         }
@@ -8251,7 +8344,7 @@
             "venue": 93,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -8306,7 +8399,8 @@
             "user": 94,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -8317,14 +8411,14 @@
             "owner": 94,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[90, 63, 80, 60, 99]"
+            "members": "[91, 100, 20]"
         }
     },
     {
         "pk": 94,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 94,
             "receiver": 94 
         }
@@ -8340,7 +8434,7 @@
             "venue": 94,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -8395,7 +8489,8 @@
             "user": 95,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -8406,7 +8501,7 @@
             "owner": 95,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[5, 49, 95, 78, 63, 31, 73, 70]"
+            "members": "[65, 95, 59, 80, 16, 86, 68]"
         }
     },
     {
@@ -8484,7 +8579,8 @@
             "user": 96,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 2,
+            "gender" : 1,
+            "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -8495,14 +8591,14 @@
             "owner": 96,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[32, 16, 47, 9, 64, 75, 45, 28, 91, 54]"
+            "members": "[92, 94, 37, 38, 96, 41]"
         }
     },
     {
         "pk": 96,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 1,
+            "status": 2,
             "shout": 96,
             "receiver": 96 
         }
@@ -8518,7 +8614,7 @@
             "venue": 96,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -8573,6 +8669,7 @@
             "user": 97,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -8584,7 +8681,7 @@
             "owner": 97,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[93, 74, 97]"
+            "members": "[8, 29, 93, 75, 40, 58, 20, 36, 21, 60]"
         }
     },
     {
@@ -8607,7 +8704,7 @@
             "venue": 97,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 1
+            "type": 2
         }
     },
     {
@@ -8662,7 +8759,8 @@
             "user": 98,
             "facebook_id": "",
             "latitude": -234.0,
-            "type": 1,
+            "gender" : 2,
+            "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
     },
@@ -8673,14 +8771,14 @@
             "owner": 98,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[71, 10, 22, 75, 61, 54, 64]"
+            "members": "[41, 68, 21, 62, 75, 93, 47, 72]"
         }
     },
     {
         "pk": 98,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 98,
             "receiver": 98 
         }
@@ -8751,6 +8849,7 @@
             "user": 99,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 1,
             "type": 1,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -8762,14 +8861,14 @@
             "owner": 99,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[37, 42, 99, 76, 27, 98, 50, 18, 87, 95]"
+            "members": "[80, 39, 5, 37, 86, 95, 79]"
         }
     },
     {
         "pk": 99,
         "model": "notification.shoutnotification",
         "fields": {
-            "status": 2,
+            "status": 1,
             "shout": 99,
             "receiver": 99 
         }
@@ -8785,7 +8884,7 @@
             "venue": 99,
             "content": "a new movie #bailuyuan# starts.",
             "time": "2012-09-16T07:36:30.558Z",
-            "type": 2
+            "type": 1
         }
     },
     {
@@ -8840,6 +8939,7 @@
             "user": 100,
             "facebook_id": "",
             "latitude": -234.0,
+            "gender" : 2,
             "type": 2,
             "icon": "icons/2012/09/16/icon.gif"
         }
@@ -8851,7 +8951,7 @@
             "owner": 100,
             "create_time": "2012-09-16T04:14:52.954Z",
             "name": "friends",
-            "members": "[39, 9, 24, 35, 67, 21]"
+            "members": "[31, 92, 98, 63, 24, 80]"
         }
     },
     {

@@ -17,6 +17,14 @@ class AccountTypeChoices(ChoiceBase):
         (company, "company"),
     )
 
+class AccountGenderChoices(ChoiceBase):
+    male = 1
+    female = 2
+    choices = (
+        (male, "male"),
+        (female, "female"),
+    )
+
 class ShoutTypeChoices(ChoiceBase):
     group = 1
     billboard = 2

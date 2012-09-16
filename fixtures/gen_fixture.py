@@ -10,6 +10,7 @@ for i in range(1, 101):
         "note_status" : random.choice([1, 2]),
         "shout_type" : random.choice([1, 2]),
         "account_type" : random.choice([1, 2]),
+        "gender" : random.choice([1, 2]),
     }
     item = items % data
     out += item
