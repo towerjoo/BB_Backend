@@ -1,4 +1,4 @@
-# Django settings for startpoint project.
+# Django settings for ayo_admin project.
 import os, sys
 
 
@@ -106,10 +106,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'startpoint.urls'
+ROOT_URLCONF = 'ayo_admin.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'startpoint.wsgi.application'
+WSGI_APPLICATION = 'ayo_admin.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
