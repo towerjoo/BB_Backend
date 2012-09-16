@@ -16,7 +16,9 @@ class UserResource(ModelResource):
         excludes = ["email", "password"]
         authorization = Authorization()
         authentication = ApiKeyAuthentication()
-        #authentication = Authentication()
+        excludes = ["username" ,"password", "is_staff", "is_active", "is_superuser", "groups", "user_permissions", ]
+        list_allowed_methods = ['get']
+        detail_allowed_methods = ['get', 'put']
 
 class AccountResource(ModelResource):
     user = fields.ForeignKey(UserResource, "user")
@@ -24,4 +26,6 @@ class AccountResource(ModelResource):
         queryset = Account.objects.all()
         authorization = Authorization()
         authentication = ApiKeyAuthentication()
-        #authentication = Authentication()
+
+        list_allowed_methods = ['get']
+        detail_allowed_methods = ['get', 'put']

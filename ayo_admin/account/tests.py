@@ -22,7 +22,7 @@ class APITest(TestCase):
         return eval(response.content)
 
     def pprint_result(self, resp):
-        print json.dumps(resp, indent=4)
+        print json.dumps(json.loads(resp.content), indent=4)
 
     def login(self):
         url = self.host + reverse("account-login")
@@ -36,7 +36,7 @@ class APITest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "success")
-        self.pprint_result(ret)
+        self.pprint_result(response)
 
     def test_login_fail(self):
         url = self.host + reverse("account-login")
@@ -46,7 +46,7 @@ class APITest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "error")
-        self.pprint_result(ret)
+        self.pprint_result(response)
 
     def test_register_succ(self):
         url = self.host + reverse("account-register")
@@ -65,7 +65,7 @@ class APITest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "success")
-        self.pprint_result(ret)
+        self.pprint_result(response)
 
     def test_register_fail(self):
         url = self.host + reverse("account-register")
@@ -84,7 +84,7 @@ class APITest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "error")
-        self.pprint_result(ret)
+        self.pprint_result(response)
 
     def get_endpoint_with_api_key(self, endpoint, detailId=""):
         endpoint = "%s%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, detailId, \
@@ -108,7 +108,7 @@ class APITest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response["Content-Type"], "application/json")
         self.assertEqual(ret.get("status"), "success")
-        self.pprint_result(ret)
+        self.pprint_result(response)
 
     def test_facebook_connection_fail(self):
         url = self.host + reverse("account-facebook-connection")
@@ -129,10 +129,50 @@ class APITest(TestCase):
         self.assertEqual(ret.get("status"), "error")
         self.pprint_result(ret)
 
-    def test_get_user_profile(self):
+
+    ######## RESTful APIs testing
+    def get_endpoint(self, endpoint, resourceId=None):
+        if resourceId:
+            # detail
+            return "%s%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, resourceId, self.api_key, self.username)
+        else:
+            # list
+            return "%s%s?api_key=%s&username=%s&format=json" % (self.host, endpoint, self.api_key, self.username)
+
+    def test_user_list(self):
         self.login()
-        url = "/api/v1/account/"
-        endpoint = self.get_endpoint_with_api_key(url, "1")
+        endpoint = self.get_endpoint("/api/v1/user/")
         response = self.c.get(endpoint)
-        ret = self.make_ret_as_dict(response)
-        self.pprint_result(ret)
+        self.pprint_result(response)
+
+    def test_user_detail(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/user/", "1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+    def test_account_list(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/account/")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+    def test_account_detail(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/account/", "1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+
+    def test_account_detail_put(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/account/", "1")
+        data = {
+            "gender" : "female"
+        }
+        response = self.c.put(endpoint, json.dumps(data), content_type='application/json')
+        print response.content
+        print response.status_code
+        #self.pprint_result(response)
+
+
+
