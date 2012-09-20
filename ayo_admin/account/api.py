@@ -59,7 +59,7 @@ class FollowRelationResource(ModelResource):
         return ret
 
 class ContactGroupResource(ModelResource):
-    owner = fields.ToOneField(UserResource, "owner")
+    owner = fields.ForeignKey(AccountResource, "owner")
     class Meta:
         queryset = ContactGroup.objects.all()
         authorization = Authorization()
@@ -70,3 +70,12 @@ class ContactGroupResource(ModelResource):
         filtering = {
             "owner" : ALL_WITH_RELATIONS,
         }
+
+    def obj_create(self, bundle, request=None, **kwargs):
+        member = Account.objects.get_account_from_user(request.user)
+        return super(ContactGroupResource, self).obj_create(bundle, request, owner=member)
+
+    def apply_authorization_limits(self, request, object_list):
+        member = Account.objects.get_account_from_user(request.user)
+        ret = object_list.filter(owner=member)
+        return ret

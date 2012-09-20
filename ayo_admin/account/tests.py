@@ -17,12 +17,12 @@ class APITest(TestCase):
         self.username = "zhutao2"
         self.api_key = ""
         self.host = "http://localhost:8000"
+        #self.host = "http://www.fandura.com/ayo"
 
     def make_ret_as_dict(self, response):
         return eval(response.content)
 
     def pprint_result(self, resp):
-        return
         print json.dumps(json.loads(resp.content), indent=4)
 
     def login(self):
@@ -218,6 +218,7 @@ class APITest(TestCase):
             "lastname" : "Test",
             "gender" : "male",
         }
+        print url
         response = self.c.post(url, data)
         print response
         ret = self.make_ret_as_dict(response)
