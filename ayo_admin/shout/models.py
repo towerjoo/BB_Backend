@@ -12,7 +12,7 @@ class Shout(models.Model):
     photo = models.ImageField(upload_to="shouts/%Y/%m/%d", null=True, blank=True) 
     type = models.IntegerField(choices=ShoutTypeChoices.choices, default=ShoutTypeChoices.group)
     is_featured = models.BooleanField(default=False)
-    time = models.DateTimeField(auto_now_add=True)
+    time = models.DateTimeField()
 
     def __unicode__(self):
         if self.type == ShoutTypeChoices.group:
@@ -24,7 +24,7 @@ class ShoutComment(models.Model):
     shout = models.ForeignKey(Shout, related_name="commentShout")
     commenter = models.ForeignKey(Account, related_name="ShoutCommenter")
     content = models.CharField(max_length=100)
-    comment_time = models.DateTimeField(auto_now_add=True)
+    comment_time = models.DateTimeField()
 
     def __unicode__(self):
         return "%s wrote a comment for shout %s" % (self.commenter.user.username, self.shout.content[:10])
@@ -33,7 +33,7 @@ class ShoutReport(models.Model):
     shout = models.ForeignKey(Shout, related_name="reportShout")
     reporter = models.ForeignKey(Account, related_name="ShoutReporter")
     content = models.CharField(max_length=100)
-    report_time = models.DateTimeField(auto_now_add=True)
+    report_time = models.DateTimeField()
 
     def __unicode__(self):
         return "%s reported shout %s" % (self.reporter.user.username, self.shout.content[:10])

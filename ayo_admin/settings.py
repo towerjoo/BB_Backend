@@ -8,6 +8,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+
 sys.path.append(ROOT_PATH)
 
 ADMINS = (

@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from const.choices import AccountTypeChoices, AccountGenderChoices
+from datetime import datetime
+from django.utils.timezone import utc
 
 class AccountManager(models.Manager):
     def facebook_connection(self, facebook_id, facebook_token, user_firstname, user_lastname, email, user_gender, type=AccountTypeChoices.individual):
@@ -11,6 +13,7 @@ class AccountManager(models.Manager):
             acct = self.filter(user=u[0])
             if acct:
                 acct.facebook_access_token = facebook_token #update access token
+                acct.last_login_time = datetime.utcnow().replace(tzinfo=utc)
                 acct.save()
                 return True, acct
             return False, None
@@ -21,6 +24,8 @@ class AccountManager(models.Manager):
         user.save()
         gender = AccountGenderChoices.male if user_gender.lower() == "male" else AccountGenderChoices.female
         rec = self.model(user=user, gender=gender, type=type, is_facebook_account=True, facebook_id=facebook_id, facebook_access_token=facebook_token)
+        rec.register_time = datetime.utcnow().replace(tzinfo=utc)
+        rec.last_login_time = datetime.utcnow().replace(tzinfo=utc)
         rec.save()
         return True, rec
 
@@ -36,9 +41,17 @@ class AccountManager(models.Manager):
         user.save()
         gender = AccountGenderChoices.male if user_gender.lower() == "male" else AccountGenderChoices.female
         rec = self.model(user=user, gender=gender, type=type, is_facebook_account=False)
+        rec.register_time = datetime.utcnow().replace(tzinfo=utc)
+        rec.last_login_time = datetime.utcnow().replace(tzinfo=utc)
         rec.save()
         return True, rec
 
+    def get_account_from_user(self, user):
+        try:
+            acct = self.get(user=user)
+            return acct
+        except:
+            return None
 
 
 class Account(models.Model):
@@ -51,13 +64,14 @@ class Account(models.Model):
     facebook_id = models.CharField(max_length=100, null=True, blank=True)
     facebook_access_token = models.CharField(max_length=100, null=True, blank=True)
     is_facebook_account = models.BooleanField(default=True)
-    register_time = models.DateTimeField(auto_now_add=True)
-    last_login_time = models.DateTimeField(auto_now=True)
+    register_time = models.DateTimeField()
+    last_login_time = models.DateTimeField()
 
     objects = AccountManager()
 
     def __unicode__(self):
         return "%s(%s)" % (self.user.username, AccountTypeChoices.get_value(self.type))
+
 
 class FollowRelation(models.Model):
     follower = models.ForeignKey(User, related_name="follower")
@@ -72,7 +86,7 @@ class ContactGroup(models.Model):
     name = models.CharField(max_length=20)
     owner = models.ForeignKey(Account, related_name="ContactGroupOwner")
     members = models.TextField(default="[]")    # serilized data
-    create_time = models.DateTimeField(auto_now_add=True)
+    create_time = models.DateTimeField()
 
     def __unicode__(self):
         return "%s's %s contact group" % (self.owner.user.username,self.name)

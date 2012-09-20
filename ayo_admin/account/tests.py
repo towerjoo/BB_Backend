@@ -14,7 +14,7 @@ class APITest(TestCase):
     fixtures = ["all.json"]
     def setUp(self):
         self.c = Client()
-        self.username = "zhutao1"
+        self.username = "zhutao2"
         self.api_key = ""
         self.host = "http://localhost:8000"
 
@@ -22,11 +22,12 @@ class APITest(TestCase):
         return eval(response.content)
 
     def pprint_result(self, resp):
+        return
         print json.dumps(json.loads(resp.content), indent=4)
 
     def login(self):
         url = self.host + reverse("account-login")
-        response = self.c.post(url, {"username" : "zhutao1", "password" : "zhutao"})
+        response = self.c.post(url, {"username" : self.username, "password" : "zhutao"})
         ret = self.make_ret_as_dict(response)
         self.api_key = ret.get("data").get('api_key')
         return response, ret
@@ -182,8 +183,10 @@ class APITest(TestCase):
 
     def test_follow_relation_list(self):
         self.login()
-        endpoint = self.get_endpoint("/api/v1/followrelation/", filter="follower_id=1")
+        endpoint = self.get_endpoint("/api/v1/followrelation/")
+        print endpoint
         response = self.c.get(endpoint)
+        print response.status_code
         self.pprint_result(response)
 
     def test_follow_relation_detail(self):

@@ -1,6 +1,6 @@
 # Create your views here.
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login as UserLogin, logout
 import json
 from django.views.decorators.csrf import csrf_exempt
 from common.utils import is_valid_email
@@ -19,6 +19,7 @@ def login(request):
             if password:
                 user = authenticate(username=username, password=password)
                 if user and user.is_active:
+                    UserLogin(request, user)
                     from tastypie.models import ApiKey
                     api = ApiKey.objects.create(user=user)
                     data.update({
@@ -68,6 +69,8 @@ def register(request):
             flag, acct = Account.objects.new_user(username, user_firstname, user_lastname, password, \
                             email, user_gender)
             if flag:
+                user = authenticate(username=username, password=password)
+                UserLogin(request, user)
                 from tastypie.models import ApiKey
                 api = ApiKey.objects.create(user=acct.user)
                 data.update({
@@ -116,6 +119,8 @@ def facebook_connection(request):
 
             flag, acct = Account.objects.facebook_connection(facebook_id, facebook_token, user_firstname, user_lastname, email, user_gender)
             if flag:
+                user = authenticate(username=facebook_id, password=facebook_id)
+                UserLogin(request, user)
                 from tastypie.models import ApiKey
                 api = ApiKey.objects.create(user=acct.user)
                 data.update({

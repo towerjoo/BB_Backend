@@ -5,8 +5,8 @@ class Venue(models.Model):
     photo = models.ImageField(upload_to="venues/%Y/%m/%d", null=True, blank=True) 
     longitude = models.FloatField(null=True, blank=True)
     latitude = models.FloatField(null=True, blank=True)
-    create_time = models.DateTimeField(auto_now_add=True)
-    last_edit_time = models.DateTimeField(auto_now=True)
+    create_time = models.DateTimeField()
+    last_edit_time = models.DateTimeField()
 
     def __unicode__(self):
         return "%s" % self.name

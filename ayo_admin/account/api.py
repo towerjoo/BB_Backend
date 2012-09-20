@@ -36,8 +36,8 @@ class AccountResource(ModelResource):
         }
 
 class FollowRelationResource(ModelResource):
-    follower = fields.ToOneField(UserResource, "follower")
-    followee = fields.ToOneField(UserResource, "followee")
+    follower = fields.ForeignKey(AccountResource, "follower")
+    followee = fields.ForeignKey(AccountResource, "followee")
     class Meta:
         queryset = FollowRelation.objects.all()
         authorization = Authorization()
@@ -48,6 +48,15 @@ class FollowRelationResource(ModelResource):
         filtering = {
             "follower" : ALL_WITH_RELATIONS,
         }
+
+    def obj_create(self, bundle, request=None, **kwargs):
+        member = Account.objects.get_account_from_user(request.user)
+        return super(FollowRelationResource, self).obj_create(bundle, request, follower=member)
+
+    def apply_authorization_limits(self, request, object_list):
+        member = Account.objects.get_account_from_user(request.user)
+        ret = object_list.filter(follower=member)
+        return ret
 
 class ContactGroupResource(ModelResource):
     owner = fields.ToOneField(UserResource, "owner")
