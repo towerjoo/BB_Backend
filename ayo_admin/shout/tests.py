@@ -44,3 +44,9 @@ class APITest(APIBaseTest):
         response = self.c.get(endpoint)
         self.pprint_result(response)
 
+    def test_shout_filter(self):
+        self.login()
+        endpoint = self.get_endpoint("/api/v1/shout/", filter="author__user__username=zhutao1")
+        response = self.c.get(endpoint)
+        self.pprint_result(response)
+

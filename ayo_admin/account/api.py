@@ -17,9 +17,12 @@ class UserResource(ModelResource):
         excludes = ["email", "password"]
         authorization = Authorization()
         authentication = ApiKeyAuthentication()
-        excludes = ["username" ,"password", "is_staff", "is_active", "is_superuser", "groups", "user_permissions", ]
+        excludes = ["password", "is_staff", "is_active", "is_superuser", "groups", "user_permissions", ]
         list_allowed_methods = ['get']
         detail_allowed_methods = ['get', 'put']
+        filtering = {
+            "username" : ALL,
+        }
 
 class AccountResource(ModelResource):
     user = fields.ForeignKey(UserResource, "user")
@@ -33,6 +36,9 @@ class AccountResource(ModelResource):
 
         filtering = {
             "id" : ALL,
+            "user" : ALL_WITH_RELATIONS,
+            "gender" : ALL,
+            "type" : ALL,
         }
 
 class FollowRelationResource(ModelResource):
@@ -47,6 +53,7 @@ class FollowRelationResource(ModelResource):
         detail_allowed_methods = ['get', 'put', 'delete']
         filtering = {
             "follower" : ALL_WITH_RELATIONS,
+            "followee" : ALL_WITH_RELATIONS,
         }
 
     def obj_create(self, bundle, request=None, **kwargs):
@@ -69,6 +76,7 @@ class ContactGroupResource(ModelResource):
         detail_allowed_methods = ['get']
         filtering = {
             "owner" : ALL_WITH_RELATIONS,
+            "name" : ALL,
         }
 
     def obj_create(self, bundle, request=None, **kwargs):

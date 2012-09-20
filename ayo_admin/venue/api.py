@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from tastypie import fields
 from tastypie.authorization import Authorization
 from tastypie.authentication import ApiKeyAuthentication, Authentication
+from tastypie.constants import ALL, ALL_WITH_RELATIONS
 
 from django.db import models
 from tastypie.models import create_api_key
@@ -17,4 +18,10 @@ class VenueResource(ModelResource):
         authentication = ApiKeyAuthentication()
         list_allowed_methods = ['get']
         detail_allowed_methods = ['get', 'put']
+
+        filtering = {
+            "name" : ALL,
+            "longitude" : ALL,
+            "latitude" : ALL,
+        }
 

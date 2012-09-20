@@ -23,6 +23,14 @@ class ShoutResource(ModelResource):
         authentication = ApiKeyAuthentication()
         list_allowed_methods = ['get']
         detail_allowed_methods = ['get']
+        filtering = {
+            "author" : ALL_WITH_RELATIONS,
+            "venue" : ALL_WITH_RELATIONS,
+            "group" : ALL_WITH_RELATIONS,
+            "is_featured" : ALL,
+            "type" : ALL,
+
+        }
 
 class ShoutCommentResource(ModelResource):
     shout = fields.ForeignKey(ShoutResource, "shout")
@@ -35,6 +43,11 @@ class ShoutCommentResource(ModelResource):
         list_allowed_methods = ['get']
         detail_allowed_methods = ['get', 'put']
 
+        filtering = {
+            "commenter" : ALL_WITH_RELATIONS,
+            "shout" : ALL_WITH_RELATIONS,
+        }
+
 
 class ShoutReportResource(ModelResource):
     shout = fields.ForeignKey(ShoutResource, "shout")
@@ -46,3 +59,8 @@ class ShoutReportResource(ModelResource):
 
         list_allowed_methods = ['get']
         detail_allowed_methods = ['get']
+
+    filtering = {
+        "shout" : ALL_WITH_RELATIONS,
+        "reporter" : ALL_WITH_RELATIONS,
+    }
