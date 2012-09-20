@@ -208,3 +208,31 @@ class APITest(TestCase):
         response = self.c.get(endpoint)
         self.pprint_result(response)
 
+    def test_register_login(self):
+        url = self.host + reverse("account-register")
+        data = {
+            "username" : "test1",
+            "email" : "test1@gmail.com",
+            "password" : "test1",
+            "firstname" : "Test",
+            "lastname" : "Test",
+            "gender" : "male",
+        }
+        response = self.c.post(url, data)
+        print response
+        ret = self.make_ret_as_dict(response)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response["Content-Type"], "application/json")
+        self.assertEqual(ret.get("status"), "success")
+        self.pprint_result(response)
+
+        # login then
+        login_data = {
+            "username" : "test1",
+            "password" : "test1",
+            }
+        url = self.host + reverse("account-login")
+        response = self.c.post(url, login_data)
+        print response
+

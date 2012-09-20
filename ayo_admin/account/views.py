@@ -5,6 +5,21 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from common.utils import is_valid_email
 from account.models import Account
+from datetime import datetime
+from django.utils.timezone import utc
+
+
+def update_api_key(user):
+    from tastypie.models import ApiKey
+    item = ApiKey.objects.filter(user=user)
+    if item:
+        item[0].key = item[0].generate_key()
+        item[0].created = datetime.utcnow().replace(tzinfo=utc)
+        item[0].save()
+        return item[0]
+    else:
+        item = ApiKey.objects.create(user=user)
+        return item
 
 @csrf_exempt
 def login(request):
@@ -21,7 +36,7 @@ def login(request):
                 if user and user.is_active:
                     UserLogin(request, user)
                     from tastypie.models import ApiKey
-                    api = ApiKey.objects.create(user=user)
+                    api = update_api_key(user)
                     data.update({
                         "message" : "Login successfully",
                         "data" : {
@@ -72,7 +87,7 @@ def register(request):
                 user = authenticate(username=username, password=password)
                 UserLogin(request, user)
                 from tastypie.models import ApiKey
-                api = ApiKey.objects.create(user=acct.user)
+                api = update_api_key(user)
                 data.update({
                     "message" : "Register successfully",
                     "data" : {
@@ -122,7 +137,7 @@ def facebook_connection(request):
                 user = authenticate(username=facebook_id, password=facebook_id)
                 UserLogin(request, user)
                 from tastypie.models import ApiKey
-                api = ApiKey.objects.create(user=acct.user)
+                api = update_api_key(user)
                 data.update({
                     "message" : "Facebook connection successfully",
                     "data" : {
