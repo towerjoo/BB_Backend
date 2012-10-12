@@ -27,8 +27,8 @@ v1_api.register(ShoutNotificationResource())
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'ayo_admin.views.home', name='home'),
-    # url(r'^ayo_admin/', include('ayo_admin.foo.urls')),
+    # url(r'^$', 'BB_Backend.views.home', name='home'),
+    # url(r'^BB_Backend/', include('BB_Backend.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

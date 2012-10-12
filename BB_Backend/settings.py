@@ -1,4 +1,4 @@
-# Django settings for ayo_admin project.
+# Django settings for BB_Backend project.
 import os, sys
 
 
@@ -107,10 +107,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'ayo_admin.urls'
+ROOT_URLCONF = 'BB_Backend.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'ayo_admin.wsgi.application'
+WSGI_APPLICATION = 'BB_Backend.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -130,12 +130,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    "django_extensions",
+    #"django_extensions",
     "django_evolution",
     "debug_toolbar",
 
     # apps here
-    #'ayo',
     'account',
     'notification',
     'shout',
